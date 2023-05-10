@@ -13,24 +13,23 @@ public class Vehiculo {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name = "idAlumno")
-    private Alumnos idAlumno;
+    @JoinColumn(name = "idPersona")
+    private Persona idpersona;
 
     @ManyToOne
-    @JoinColumn(name = "idDocente")
-    private Docente idDocente;
+    @JoinColumn(name = "idTipodePersona")
+    private TipodePersona idTipodePersona;
 
     @ManyToOne
-    @JoinColumn(name = "idAdministrativo")
-    private Administrativo idAdministrativo;
-
-    private String tipo;
-
-    private String marca;
-
-    private String color;
+    @JoinColumn(name = "idTipoVehiculo")
+    private TipoVehiculo idTipoVehiculo;
 
     private String placa;
+
+    private String color;
+    private String marca;
+
+    private String tipoCombustible;
 
 
 }

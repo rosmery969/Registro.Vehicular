@@ -5,16 +5,15 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Usuario {
+public class TipoVehiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="idUsuario")
+    @Column(name="idTipoVehiculo")
     private Integer id;
-    private String user;
 
-    private String pass;
+    private String descripcion ;
 
-    
+
 
 
 

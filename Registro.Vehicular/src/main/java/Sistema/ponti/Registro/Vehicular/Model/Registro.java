@@ -3,8 +3,9 @@ package Sistema.ponti.Registro.Vehicular.Model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.sql.Time;
-import java.util.Date;
+
+
+import java.time.LocalDateTime;
 
 
 @Data
@@ -20,10 +21,9 @@ public class Registro {
     @JoinColumn(name = "idVehiculo")
     private Vehiculo idVehiculo;
 
-    private Date fecha;
 
-    private Time hingreso;
+    private LocalDateTime hingreso;
 
-    private Time hsalida ;
-    private Time ttotal;
+    private LocalDateTime hsalida ;
+
 }
